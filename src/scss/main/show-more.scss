@@ -1,0 +1,38 @@
+.show-more {
+    display: none;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+  }
+  
+  .show-more:hover {
+    color: $button;
+    transition: color 0.25s ease;
+  }
+  
+  .show-more::before {
+    content: url(../img/expand.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transition: transform 0.5s;
+  }
+  
+  .show-more--active::before {
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+  }
+
+  @media (min-width: 768px) {
+    .show-more{
+    display:flex;
+    margin-left:24px;
+    margin-bottom:32px;
+    }
+  }

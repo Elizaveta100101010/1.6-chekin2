@@ -1,0 +1,38 @@
+.side{
+    &__sidebuttons
+    {
+    display: none;
+    }
+    &__sidebuttons-text{
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      margin-right: 8px;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+      cursor: pointer;
+    }
+    
+    &__sidebuttons-text:hover{
+        color: $button;
+        transition: color 0.3s;
+        transform:scale(1.1) translateX(-5px); 
+    }
+    
+    &__sidebuttons-repair{
+      background-image: url(../img/Repair.svg);
+    }
+
+    &__sidebuttons-checkstatus{
+      background-image: url(../img/Checkstatus.svg);
+    }
+  }
+  @media (min-width: 1440px) {
+  .side{
+    &__sidebuttons{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+  @media (min-width: 1440px) {
+.main{
+    margin-left:320px;
+    max-width: 1200px;
+    &__header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      padding-right: 32px;
+      margin-top:20px;
+    }
+    &__content {
+      padding: 0 34px;
+    }
+
+
+
+}
+.footer{
+    margin-left:320px;  
+    max-width: 1200px; 
+}
+  }

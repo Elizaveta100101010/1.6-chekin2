@@ -1,0 +1,18 @@
+.tablet-buttons {
+    display: none;
+    &__call {
+      background-image: url(../img/Call.svg);
+    }
+    &__chat {
+      background-image: url(../img/Chat.svg);
+    }
+    &__profile {
+      background-image: url(../img/Profile.svg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .tablet-buttons {
+        display: flex;
+      }
+  }

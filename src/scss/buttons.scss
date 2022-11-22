@@ -1,0 +1,18 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $button;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+  }
+  
+  .button:last-child {
+    margin-right: 0;
+  }

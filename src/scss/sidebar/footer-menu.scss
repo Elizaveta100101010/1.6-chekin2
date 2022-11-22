@@ -1,0 +1,129 @@
+
+.footer-menu{
+  margin-top:32px;
+  &__buttons{
+    display: flex;
+    align-items: center;
+  }
+  
+  &__buttons-call {
+    background-image: url(../img/Call.svg);
+    transition: all 0.5s ease-in-out;
+  }
+  &__buttons-call:hover {
+    background-image: url(../img/Call2.svg);
+    transform:scale(1.2);
+  }
+  
+  &__buttons-chat {
+    background-image: url(../img/Chat.svg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  &__buttons-chat:hover {
+    background-image: url(../img/Chat2.svg);
+    transform:scale(1.2);
+  }
+  
+  
+  &__buttons-profile {
+    background-image: url(../img/Profile.svg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  &__buttons-profile:hover {
+    background-image: url(../img/Profile2.svg);
+    transform:scale(1.2);
+  }
+  
+  &__mail{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom:12px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  &__mail:after {
+    display: block;
+      position: absolute;
+    bottom:2px;
+      left: 0; 
+      width: 0;
+      height: 2px; 
+      background-color: $button; 
+      content: "";
+      transition: width 0.3s ease-out; 
+  }
+  
+  &__mail:hover:after{
+    width:35%;
+  }
+  &__mail:hover{
+    transform:scale(1.2) translateX(25px); 
+  }
+  
+  &__number{
+    display: flex;
+    align-items: center;
+    margin-bottom:8px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  &__number:after {
+    display: block;
+      position: absolute;
+    bottom:2px;
+      left: 0; 
+      width: 0;
+      height: 2px; 
+      background-color: $button; 
+      content: "";
+      transition: width 0.3s ease-out; 
+  }
+  
+  &__number:hover:after{
+    width:65%;
+  }
+  &__number:hover{
+    transform:scale(1.2) translateX(25px);
+  
+  }
+  
+  
+  &__languages{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+  } 
+  }
+  
+  .languages{
+  padding-right: 7px;
+  &--active{
+    color:$buttontext;
+  }
+  }
+  
+  .languages:hover{
+    color: $buttontext;
+    cursor: default; 
+  }

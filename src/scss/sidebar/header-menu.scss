@@ -1,0 +1,68 @@
+
+.header-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  
+      &__cl-logo {
+        display: flex;
+        align-items: center;
+      }
+      &__cl-button {
+        background-image: url(../img/Close.svg);
+        transition: all 0.5s ease-in-out;
+      }
+      &__cl-button:hover {
+        transform: rotate(90deg) scale(1.2);
+      }
+  
+      &__search{
+      background: white;
+      height:50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+      }
+  
+      &__search:hover > &__search-text {
+        opacity:1;
+        padding-left:15px;
+        width:240px;
+      }
+  
+      &__search:hover{
+        border-radius: 50px;
+        border-style: solid;
+        border-color:$button;
+        border-width:1px;
+        height:55px;
+        width:240px;
+        transform: translateX(-152px);
+        background-color: white;
+      }
+  
+      &__search:hover > &__search-button {
+       opacity:0;
+       margin-left:-40px;
+      }
+      &__search-text{
+       border:none;
+       background:none;
+       outline:none;
+       color:$text;
+       font-size:16px;
+       line-height: 40px;
+       width:0px;
+       opacity:0;
+       transition:0.4s;
+      } 
+      &__search-button {
+        transition: all 0.4s ease-in-out;
+         margin-left:90px;
+          background-image: url(../img/Search.svg);
+        }
+  
+  }
+

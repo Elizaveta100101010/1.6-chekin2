@@ -1,0 +1,51 @@
+.container2{
+      &__show-more {
+        transition: color 0.25s ease;
+      }
+    
+      &__item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        margin-right:16px;
+        height: 160px;
+        width:240px;
+        font-weight: 500;
+        color: $text;
+      }
+    
+      &__name {
+        align-self: flex-start;
+      }
+    
+      &__show-more:hover {
+        color: $button;
+        transition: color 0.25s ease;
+      }
+
+      &__button {
+        align-self: flex-end;
+        transition: background-color 0.25s ease;
+      }
+
+
+    }
+    
+    .card:hover > .container2__button {
+      background-color: rgba($color: $button, $alpha: 0.25);
+      transition: transform 0.25s ease, background-color 0.25s ease; 
+      }
+
+      @media (min-width: 768px) {
+        .container2__item{
+          width:224px;
+          margin-right:0px;
+            }
+       }   
+
+      @media (min-width: 1440px) {
+       .container2__item{
+         width:240px;
+
+           }
+      }   

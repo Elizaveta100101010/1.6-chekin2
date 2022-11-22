@@ -1,0 +1,97 @@
+.feedback {
+  display:flex;
+  position: fixed;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 360px;
+  background-color: #fff;
+  border-radius: 1px;
+  z-index: 5;
+  transition: all 0.3s linear;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+  &__text {
+    position: relative;
+    font-family: TT Lakes;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  &__text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 4px;
+    height: 100%;
+    background-color: $highlight;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  &__close-btn {
+    margin-bottom: 40px;
+    background-color: $button;
+    background-image: url(../img/Close.svg);
+  }
+}
+
+.feedbackopen--opened {
+  transition: all 0.3s linear;
+  right: 0;
+  overflow-y: auto;
+
+  }
+
+.ordercall--opened {
+  transition: all 0.3s linear;
+  right: 0;
+  overflow-y: auto;
+}
+
+
+@media (min-width: 768px) {
+  .feedback {
+    max-width: 440px;
+    border-left: 1px solid $shadow;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px rgba(69, 79, 126, 0.02);
+    &__container {
+      padding: 24px 32px;
+    }
+    &__text::before {
+      border-radius: 4px;
+      left: -35px;
+    }
+    &__close-btn {
+      position: absolute;
+      left: -65px;
+      background-color: $button;
+    }
+  }
+
+  .feedbackopen--opened {
+    overflow: visible;
+  }
+  .ordercall--opened {
+    overflow: visible;
+  }
+  .form__consent {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: 1440px) {
+.feedback{
+
+  top:0;
+}
+}

@@ -1,0 +1,56 @@
+@import "~normalize.css";
+@import "vars";
+@import "body";
+@import "header/header";
+@import "fonts";
+@import "buttons";
+@import "header/tablet-buttons";
+@import"main/title";
+@import"main/side-buttons";
+@import"main/nav-bar";
+@import"main/content";
+@import"main/brands";
+@import"main/cards";
+@import"main/button-brand";
+@import"main/show-more";
+@import"main/container2";
+@import"main/prices";
+@import"main/table";
+@import"swiper";
+@import"footer/footer";
+@import"sidebar/button-image.scss";
+@import"sidebar/footer-menu.scss";
+@import"sidebar/header-menu.scss";
+@import"sidebar/nav-barmenu.scss";
+@import"sidebar/burger-menu.scss";
+@import"feedback/feedback.scss";
+@import"feedback/form.scss";
+@import "blur";
+@import"main/main";
+@import"main/hiddencard";
+@import url("https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

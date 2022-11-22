@@ -1,0 +1,87 @@
+.nav-bar{
+    &__inner {
+      position: relative;
+    }
+    &__list {
+      display: flex;
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding-left: 16px;
+      margin-bottom: 24px;
+      margin-top: 0;
+    }
+  
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      height: 40px;
+      letter-spacing: -0.2px;
+      &--active {
+        list-style: none;
+        background: white;
+        border: 2px solid $navbuttonbr;
+        border-radius: 6px;
+      }
+  
+    }
+
+    &__button:hover:not(.nav-bar__button--active) {
+      list-style: none;
+      border-style: none;
+      background-color: white;
+      border: 2px solid $active;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    &__link {
+      white-space: nowrap;
+      text-decoration: none;
+      font-weight: 500;
+      color: $buttontext;
+      font-size: 16px;
+      padding: 8px 16px;
+      transition: color 0.3s;
+    }
+
+  }
+  
+  @media (min-width: 768px) {
+  .nav-bar__list {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-bar__list {
+    padding-left: 34px;
+    padding-top:0;
+  }
+}
+  
+@media (min-width: 1440px) {
+  .nav-bar {
+    &__list {
+      padding: 0 34px;
+      overflow: visible;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }}
+
+  .fade {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 24px;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+  }
